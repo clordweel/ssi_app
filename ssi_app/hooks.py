@@ -9,7 +9,6 @@ app_license = "mit"
 # ------------------------------------------------------------------------------
 # — ssi_accounts：科目/报表分类模板数据
 # — desk_terms_print：从 COS 参考仓库复制的「条款 / 打印格式 / 打印样式 / 表头」仅四类 JSON（其余 fixtures 未引入）
-# — translations：补齐上游暂未提供的界面译文（Translation，`language` 须与站点 Language 文档名一致，一般为 zh）
 fixtures = [
 	"fixtures/ssi_accounts/account_category_china.json",
 	"fixtures/ssi_accounts/financial_report_template_china_balance_sheet.json",
@@ -17,7 +16,6 @@ fixtures = [
 	"fixtures/desk_terms_print/print_format.json",
 	"fixtures/desk_terms_print/print_style.json",
 	"fixtures/desk_terms_print/letter_head.json",
-	"fixtures/translations/onboarding_buying_zh.json",
 ]
 
 # Apps
