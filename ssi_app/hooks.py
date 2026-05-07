@@ -7,15 +7,40 @@ app_license = "mit"
 
 # Fixtures
 # ------------------------------------------------------------------------------
-# — ssi_accounts：科目/报表分类模板数据
-# — desk_terms_print：从 COS 参考仓库复制的「条款 / 打印格式 / 打印样式 / 表头」仅四类 JSON（其余 fixtures 未引入）
+# Frappe migrate 只会导入「本 app 包目录下 fixtures/」里的顶层 *.json（不递归子目录）。
+# 见 frappe.utils.fixtures.import_fixtures — hooks 中的路径字符串不会被当作导入清单。
+# 下列 hooks.fixtures 供 bench export-fixtures 使用：DocType + filters（与顶层 JSON 内容对应）。
 fixtures = [
-	"fixtures/ssi_accounts/account_category_china.json",
-	"fixtures/ssi_accounts/financial_report_template_china_balance_sheet.json",
-	"fixtures/desk_terms_print/terms_and_conditions.json",
-	"fixtures/desk_terms_print/print_format.json",
-	"fixtures/desk_terms_print/print_style.json",
-	"fixtures/desk_terms_print/letter_head.json",
+	{
+		"dt": "Account Category",
+		"filters": [["description", "like", "%中国准则%"]],
+	},
+	{
+		"dt": "Financial Report Template",
+		"filters": [["template_name", "=", "资产负债表（中国准则）"]],
+	},
+	{
+		"dt": "Terms and Conditions",
+		"filters": [
+			[
+				"name",
+				"in",
+				[
+					"工业品采销合同补充条款",
+					"采购合同条款 - POT/2026-10",
+					"工业产品买卖条款 - 简易合同",
+					"工业产品采购条款 - POT/2026-11",
+					"销售合同条款 - SOT/2026-10",
+				],
+			]
+		],
+	},
+	{
+		"dt": "Print Format",
+		"filters": [["module", "in", ["ssi_stock", "ssi_app", "ssi_accounts"]]],
+	},
+	{"dt": "Print Style", "filters": [["name", "=", "COS 通用打印样式"]]},
+	{"dt": "Letter Head", "filters": [["name", "=", "COS 通用打印页头"]]},
 ]
 
 # Apps
