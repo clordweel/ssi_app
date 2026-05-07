@@ -1,6 +1,7 @@
 [
 	{
 		"doctype": "Financial Report Template",
+		"name": "资产负债表（中国准则）",
 		"template_name": "资产负债表（中国准则）",
 		"report_type": "Balance Sheet",
 		"disabled": 0,
