@@ -1,8 +1,8 @@
 app_name = "ssi_app"
-app_title = "SSI App"
-app_publisher = "SSI"
-app_description = "SSI multi-module custom app"
-app_email = "noreply@ssi.local"
+app_title = "AIOT App"
+app_publisher = "AIOT"
+app_description = "AIOT multi-module custom app for ERPNext"
+app_email = "noreply@aiot.local"
 app_license = "mit"
 
 # Fixtures
@@ -39,8 +39,8 @@ fixtures = [
 		"dt": "Print Format",
 		"filters": [["module", "in", ["ssi_stock", "ssi_app", "ssi_accounts"]]],
 	},
-	{"dt": "Print Style", "filters": [["name", "=", "SSI 通用打印样式"]]},
-	{"dt": "Letter Head", "filters": [["name", "=", "SSI 通用打印页头"]]},
+	{"dt": "Print Style", "filters": [["name", "=", "AIOT 通用打印样式"]]},
+	{"dt": "Letter Head", "filters": [["name", "=", "AIOT 通用打印页头"]]},
 ]
 
 # Apps
@@ -53,7 +53,7 @@ fixtures = [
 # 	{
 # 		"name": "ssi_app",
 # 		"logo": "/assets/ssi_app/logo.png",
-# 		"title": "SSI App",
+# 		"title": "AIOT App",
 # 		"route": "/ssi_app",
 # 		"has_permission": "ssi_app.api.permission.has_app_permission"
 # 	}

@@ -1,9 +1,9 @@
 [project]
 name = "ssi_app"
 authors = [
-    { name = "SSI", email = "noreply@ssi.local"}
+    { name = "AIOT", email = "noreply@aiot.local"}
 ]
-description = "SSI multi-module custom app"
+description = "AIOT multi-module custom app for ERPNext"
 requires-python = ">=3.14"
 readme = "README.md"
 dynamic = ["version"]

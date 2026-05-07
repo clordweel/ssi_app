@@ -1,6 +1,6 @@
-### SSI App
+### AIOT App
 
-SSI multi-module custom app
+AIOT multi-module custom app for ERPNext (`ssi_app` package).
 
 ### Installation
 

@@ -79,7 +79,7 @@ def copy_chart_templates(*, dry_run: bool = False) -> dict[str, Any]:
 		except Exception as e:
 			msg = f"{name}: {e!s}"
 			out["errors"].append(msg)
-			frappe.log_error(message=msg, title="SSI copy_chart_templates")
+			frappe.log_error(message=msg, title="AIOT copy_chart_templates")
 
 	return out
 
@@ -119,6 +119,6 @@ def remove_templates_from_erpnext(*, dry_run: bool = False) -> dict[str, Any]:
 		except Exception as e:
 			msg = f"{name}: {e!s}"
 			out["errors"].append(msg)
-			frappe.log_error(message=msg, title="SSI remove_chart_templates")
+			frappe.log_error(message=msg, title="AIOT remove_chart_templates")
 
 	return out
