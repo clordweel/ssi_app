@@ -39,8 +39,8 @@ fixtures = [
 		"dt": "Print Format",
 		"filters": [["module", "in", ["ssi_stock", "ssi_app", "ssi_accounts"]]],
 	},
-	{"dt": "Print Style", "filters": [["name", "=", "COS 通用打印样式"]]},
-	{"dt": "Letter Head", "filters": [["name", "=", "COS 通用打印页头"]]},
+	{"dt": "Print Style", "filters": [["name", "=", "SSI 通用打印样式"]]},
+	{"dt": "Letter Head", "filters": [["name", "=", "SSI 通用打印页头"]]},
 ]
 
 # Apps
