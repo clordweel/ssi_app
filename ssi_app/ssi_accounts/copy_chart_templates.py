@@ -15,6 +15,9 @@
 （若你已清空 ``custom``，请先备份文件名再执行，或手工删 ``verified`` 内对应 JSON）::
 
 	bench --site <站点名> execute ssi_app.ssi_accounts.copy_chart_templates.remove_templates_from_erpnext
+
+若复制后界面标题仍旧：先确认服务器已 ``git pull`` 拿到最新 ``custom/*.json``。
+若 ``pull`` 报未跟踪文件将被覆盖，多半是早年 curl/SCP 遗留；删除或移走冲突文件后再拉取，然后重新执行本脚本。
 """
 
 from __future__ import annotations
