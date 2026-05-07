@@ -54,5 +54,5 @@ jspm_packages/
 # Aider AI Chat
 .aider*
 
-# 科目表模板 JSON：按需放入 chart_of_accounts/custom，用完可删；默认不提交
-ssi_app/chart_of_accounts/custom/*.json
+# 科目表模板 JSON：纳入版本库，供 git pull 后与「复制至 ERPNext verified」脚本一致。
+# 勿提交含机密或仅为一次性试验的文件；临时草稿请放仓库外或单独分支。
