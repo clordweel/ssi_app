@@ -5,6 +5,13 @@ app_description = "SSI multi-module custom app"
 app_email = "noreply@ssi.local"
 app_license = "mit"
 
+# Fixtures (ssi_accounts — 克制引用外部参考；科目/报表分类相关模板数据)
+# ------------------------------------------------------------------------------
+fixtures = [
+	"fixtures/ssi_accounts/account_category_china.json",
+	"fixtures/ssi_accounts/financial_report_template_china_balance_sheet.json",
+]
+
 # Apps
 # ------------------
 

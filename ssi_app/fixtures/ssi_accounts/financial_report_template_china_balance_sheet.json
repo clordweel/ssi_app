@@ -1,0 +1,161 @@
+[
+	{
+		"doctype": "Financial Report Template",
+		"template_name": "资产负债表（中国准则）",
+		"report_type": "Balance Sheet",
+		"disabled": 0,
+		"rows": [
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "流动资产",
+				"data_source": "Blank Line",
+				"indentation_level": 0,
+				"bold_text": 1
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "流动资产",
+				"data_source": "Account Data",
+				"balance_type": "Closing Balance",
+				"indentation_level": 1,
+				"reference_code": "CA_ASSETS",
+				"calculation_formula": "[\"account_category\", \"=\", \"流动资产\"]"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "流动资产合计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 1,
+				"bold_text": 1,
+				"reference_code": "CA_TOTAL",
+				"calculation_formula": "CA_ASSETS"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "非流动资产",
+				"data_source": "Blank Line",
+				"indentation_level": 0,
+				"bold_text": 1
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "非流动资产",
+				"data_source": "Account Data",
+				"balance_type": "Closing Balance",
+				"indentation_level": 1,
+				"reference_code": "NCA_ASSETS",
+				"calculation_formula": "[\"account_category\", \"=\", \"非流动资产\"]"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "非流动资产合计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 1,
+				"bold_text": 1,
+				"reference_code": "NCA_TOTAL",
+				"calculation_formula": "NCA_ASSETS"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "资产总计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 0,
+				"bold_text": 1,
+				"reference_code": "TOTAL_ASSETS",
+				"calculation_formula": "CA_ASSETS + NCA_ASSETS"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "流动负债",
+				"data_source": "Blank Line",
+				"indentation_level": 0,
+				"bold_text": 1
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "流动负债",
+				"data_source": "Account Data",
+				"balance_type": "Closing Balance",
+				"indentation_level": 1,
+				"reference_code": "CL_LIAB",
+				"calculation_formula": "[\"account_category\", \"=\", \"流动负债\"]"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "流动负债合计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 1,
+				"bold_text": 1,
+				"reference_code": "CL_TOTAL",
+				"calculation_formula": "CL_LIAB"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "非流动负债",
+				"data_source": "Blank Line",
+				"indentation_level": 0,
+				"bold_text": 1
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "非流动负债",
+				"data_source": "Account Data",
+				"balance_type": "Closing Balance",
+				"indentation_level": 1,
+				"reference_code": "NCL_LIAB",
+				"calculation_formula": "[\"account_category\", \"=\", \"非流动负债\"]"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "非流动负债合计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 1,
+				"bold_text": 1,
+				"reference_code": "NCL_TOTAL",
+				"calculation_formula": "NCL_LIAB"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "负债合计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 0,
+				"bold_text": 1,
+				"reference_code": "TOTAL_LIAB",
+				"calculation_formula": "CL_LIAB + NCL_LIAB"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "所有者权益",
+				"data_source": "Blank Line",
+				"indentation_level": 0,
+				"bold_text": 1
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "所有者权益",
+				"data_source": "Account Data",
+				"balance_type": "Closing Balance",
+				"indentation_level": 1,
+				"reference_code": "EQUITY",
+				"calculation_formula": "[\"account_category\", \"=\", \"所有者权益\"]"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "所有者权益合计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 1,
+				"bold_text": 1,
+				"reference_code": "EQUITY_TOTAL",
+				"calculation_formula": "EQUITY"
+			},
+			{
+				"doctype": "Financial Report Row",
+				"display_name": "负债和所有者权益总计",
+				"data_source": "Calculated Amount",
+				"indentation_level": 0,
+				"bold_text": 1,
+				"calculation_formula": "CL_LIAB + NCL_LIAB + EQUITY"
+			}
+		]
+	}
+]

@@ -1,0 +1,32 @@
+[
+	{
+		"doctype": "Account Category",
+		"account_category_name": "流动资产",
+		"root_type": "Asset",
+		"description": "中国准则：货币资金、应收、存货等"
+	},
+	{
+		"doctype": "Account Category",
+		"account_category_name": "非流动资产",
+		"root_type": "Asset",
+		"description": "中国准则：固定资产、无形资产等"
+	},
+	{
+		"doctype": "Account Category",
+		"account_category_name": "流动负债",
+		"root_type": "Liability",
+		"description": "中国准则：短期借款、应付、应交税费等"
+	},
+	{
+		"doctype": "Account Category",
+		"account_category_name": "非流动负债",
+		"root_type": "Liability",
+		"description": "中国准则：长期借款、递延收益等"
+	},
+	{
+		"doctype": "Account Category",
+		"account_category_name": "所有者权益",
+		"root_type": "Equity",
+		"description": "中国准则：实收资本、资本公积、未分配利润等"
+	}
+]
