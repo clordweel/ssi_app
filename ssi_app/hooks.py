@@ -5,11 +5,17 @@ app_description = "SSI multi-module custom app"
 app_email = "noreply@ssi.local"
 app_license = "mit"
 
-# Fixtures (ssi_accounts — 克制引用外部参考；科目/报表分类相关模板数据)
+# Fixtures
 # ------------------------------------------------------------------------------
+# — ssi_accounts：科目/报表分类模板数据
+# — desk_terms_print：从 COS 参考仓库复制的「条款 / 打印格式 / 打印样式 / 表头」仅四类 JSON（其余 fixtures 未引入）
 fixtures = [
 	"fixtures/ssi_accounts/account_category_china.json",
 	"fixtures/ssi_accounts/financial_report_template_china_balance_sheet.json",
+	"fixtures/desk_terms_print/terms_and_conditions.json",
+	"fixtures/desk_terms_print/print_format.json",
+	"fixtures/desk_terms_print/print_style.json",
+	"fixtures/desk_terms_print/letter_head.json",
 ]
 
 # Apps
